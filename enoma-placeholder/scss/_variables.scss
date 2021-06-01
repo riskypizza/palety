@@ -1,0 +1,29 @@
+/*font Variables*/
+
+$pop: 'Poppins', sans-serif;
+$play:'Playfair Display', serif;
+
+/*=================== fonts ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+$orange: #ff4a4a;
+
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+.col-md-offset-right-1,.col-lg-offset-right-1{
+    margin-right: 8.33333333%;
+}
+// Font family link

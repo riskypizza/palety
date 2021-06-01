@@ -1,0 +1,57 @@
+.p_btn{
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    display: inline-block;
+    background: $orange;
+    border: 0px;
+    color: #fff;
+    padding: 11px 48px 10px;
+    transition: all 0.3s linear;
+}
+.btn_hover_style{
+    position: relative;
+    z-index: 1;
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all 0.5s linear;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-property: transform;
+        z-index: -1;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    &:hover{
+        color: #fff;
+        &:before{
+            transform: scaleY(1);
+            transform-origin: bottom;
+        }
+    }
+}
+.g_hover{
+    background-image: linear-gradient(to Left, #7a51ed, rgb(73,49,230), rgb(73,49,230), #7a51ed);
+    transition: all 0.5s ease-in-out;
+    background-size: 200% 100%;
+    border: 1px solid #fff;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #fff;
+    padding: 11px 53px 10px;
+    &:hover{
+        background-position: 160% 50%;
+        transition: all 0.5s ease-in-out;
+        color: #fff;
+    }
+}
