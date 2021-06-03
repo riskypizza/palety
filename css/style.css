@@ -2824,7 +2824,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
   display: inline-block;
 }
 .team_item .team-img {
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 .team_item .team-img:before {
@@ -2833,11 +2833,12 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
   height: 100%;
   top: 0;
   left: 0;
-  position: absolute;
+  position: relative;
   background: rgba(255, 74, 74, 0.8);
   opacity: 0;
   transition: all 0.9s;
   z-index: 0;
+
 }
 .team_item .social_link {
   position: absolute;
