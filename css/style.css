@@ -165,6 +165,7 @@ header .navbar .navbar-brand {
   display: flex;
   align-items: center;
   cursor: pointer;
+
 }
 .burger_menu .text {
   text-transform: uppercase;
@@ -784,7 +785,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
   letter-spacing: 1.3px;
   text-transform: uppercase;
   display: inline-block;
-  background: #332515;
+  background: #332515 ;
   border: 0px;
   color: #fff;
   padding: 11px 48px 10px;
@@ -1704,7 +1705,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
   right: 17%;
 }
 
-.sc_video_inner {
+.sc_V_inner {
   max-width: 900px;
   height: 500px;
   margin: 0 auto;
@@ -3729,8 +3730,14 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
   padding-right: 20px;
 }
 
+#videoDiv {
+  text-align: center;
+}
+
 .video_img {
   position: relative;
+  padding-left: 100px;
+  
 }
 .video_img .v_icon {
   top: 50%;
